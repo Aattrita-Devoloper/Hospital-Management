@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPD - Outpatient Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .points {
+            text-align: left;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        .points li {
+            margin: 10px 0;
+            list-style: none;
+            padding-left: 20px;
+            position: relative;
+        }
+        .points li::before {
+            content: '\2713';
+            position: absolute;
+            left: 0;
+            color: #ffeb3b;
+            font-size: 1.5em;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ffeb3b;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .back-btn:hover {
+            background: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Outpatient Services (OPD)</h1>
+        <ul class="points">
+            <li>Expert consultations with specialists across various fields.</li>
+            <li>Advanced diagnostic services for accurate assessments.</li>
+            <li>Efficient appointment scheduling with minimal waiting time.</li>
+            <li>Personalized treatment plans for every patient.</li>
+            <li>Comprehensive follow-up care and medical advice.</li>
+            <li>Affordable and accessible healthcare solutions.</li>
+        </ul>
+        <a href="services.php" class="back-btn">&#8592; Back</a>
+    </div>
+</body>
+</html>

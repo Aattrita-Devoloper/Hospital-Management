@@ -1,9 +1,6 @@
 <?php
   require("lib/connection.php");
-  session_start();
-    if(!$_SESSION['id']){
-        header('location:index.php');
-    }
+
  
 ?>
 <!DOCTYPE html>

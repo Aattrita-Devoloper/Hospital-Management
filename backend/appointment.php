@@ -1,9 +1,6 @@
 <?php
   require("lib/connection.php");
-  session_start();
-    if(!$_SESSION['id']){
-        header('location:index.php');
-    }
+  
 
   $select_data_patient = "SELECT * FROM `patient` NATURAL JOIN`appointment` WHERE `patient`.`patient_id`=`appointment`.`appointment-patient-id`";  
   $run_query = mysqli_query($con,$select_data_patient);        

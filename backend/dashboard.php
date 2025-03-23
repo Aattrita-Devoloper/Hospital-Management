@@ -1,9 +1,7 @@
 <?php
   require("lib/connection.php");
-  session_start();
-    if(!$_SESSION['id']){
-        header('location:index.php');
-    }
+ 
+ 
 
     $select_department="SELECT `department-id` FROM `department` ";
     $run_query =mysqli_query($con, $select_department); 

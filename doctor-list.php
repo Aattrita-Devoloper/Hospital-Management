@@ -107,7 +107,10 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                                $allDoctorsQuery    =   "SELECT * FROM `doctor`";
+                                                $allDoctorsQuery    =   "SELECT doctor.*,
+                                                                                department.department_name AS department_name
+                                                                            FROM doctor
+                                                                            JOIN department ON `doctor`.`department-id` = `department`.`department-id`";
                                                 $runAllDoctorsQuery =   mysqli_query($con, $allDoctorsQuery);
 
                                                 if(mysqli_num_rows($runAllDoctorsQuery) > 0) {
@@ -118,7 +121,7 @@
                                                         <tr>
                                                             <td><?php echo $count++; ?></td>
                                                             <td><?php echo $doctorData['doctor-name']; ?></td>
-                                                            <td><?php echo $doctorData['department-id']; ?></td>
+                                                            <td><?php echo $doctorData['department_name']; ?></td>
                                                             <td><?php echo $doctorData['visit']; ?></td>
                                                             <td>
                                                                 <a href="#" class="btn btn-warning btn-sm">Edit</a>

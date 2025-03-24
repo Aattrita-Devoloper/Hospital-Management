@@ -33,7 +33,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="doctor-list.php" class="nav-link">
                         <i class="nav-icon bi bi-person-heart"></i>
                         <p>Doctors</p>
                     </a>

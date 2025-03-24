@@ -26,7 +26,7 @@
 
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="department-list.php" class="nav-link">
                         <i class="nav-icon bi bi-building"></i>
                         <p>Department</p>
                     </a>

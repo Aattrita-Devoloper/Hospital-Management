@@ -31,13 +31,13 @@
 <body class="login-page bg-body-secondary">
     <div class="login-box">
         <div class="login-logo">
-            <a href="../index2.html"><b>HMS</b> Login</a>
+            <a href="/"><b>HMS</b> Login</a>
         </div>
         <!-- /.login-logo -->
         <div class="card">
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Sign in to continue</p>
-                <form name="sign-in" action="" method="post">
+                <form name="sign-in" action="dashboard.php" method="post">
                     <div class="input-group mb-3">
                         <input type="email" name="email" class="form-control" placeholder="Email" />
                         <div class="input-group-text"><span class="bi bi-envelope"></span></div>
@@ -48,7 +48,7 @@
                     </div>
                     <!--begin::Row-->
                     <div class="text-center mb-3 d-grid gap-2">
-                      <button type="submit" class="btn btn-primary float-right">Sign In</button>
+                        <button type="submit" class="btn btn-primary float-right">Sign In</button>
                     </div>
                     <!--end::Row-->
                 </form>
